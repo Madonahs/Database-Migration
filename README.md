@@ -1,7 +1,5 @@
 # Database-Migration
 
-# Database-Migration
-
 This repository holds the Database Migration: from SQLiteOpenHelper to Room persistent Library. It will have examples in Java and Kotlin
 
 ## Projects
