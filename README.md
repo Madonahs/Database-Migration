@@ -1,7 +1,7 @@
 <br>
 
 <img align="left" width="180" src="https://user-images.githubusercontent.com/11560987/68677844-c92a9d80-052a-11ea-8a9f-2baaa9ac7be4.jpg">
-<p vertical-align="top"><h1>&nbsp;Database-Migration</h1>
+<p vertical-align="top"><h1>&nbsp;Database Migration</h1>
 </p>
 
 This repository holds the Database Migration: from SQLiteOpenHelper to Room persistent Library. It will have examples in Java and Kotlin
