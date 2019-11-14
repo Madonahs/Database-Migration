@@ -3,6 +3,7 @@ package com.madonasyombua.roomexample.room.dao;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
+import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
@@ -37,12 +38,8 @@ public interface ItemDao {
     @Update(onConflict = OnConflictStrategy.REPLACE)
     void updateItems(Item item);
 
-    @Query("Delete FROM items")
-    void deleteItem();
-
-    @Query("SELECT * FROM items WHERE id = :id")
-    LiveData<List<Item>> getAllItemsById(int id);
-
+    @Delete
+    void deleteItem(Item item);
 
 
 }
