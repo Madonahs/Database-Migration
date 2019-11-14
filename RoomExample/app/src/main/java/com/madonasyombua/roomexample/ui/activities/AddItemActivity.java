@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.madonasyombua.roomexample.R;
+
 public class AddItemActivity extends AppCompatActivity {
 
     @Override

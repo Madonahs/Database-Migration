@@ -4,6 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activities.AddItemActivity">
+    tools:context="ui.activities.AddItemActivity">
+
+    <EditText
+        android:id="@+id/item_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/enter_item_one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/item_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/enter_item_three"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_one"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/item_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/enter_third_item"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_two"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/item_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="92dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/submit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_three" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

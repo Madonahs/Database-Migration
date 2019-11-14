@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Room Example</string>
+    <string name="enter_item_one">Item one</string>
+    <string name="enter_item_three">Item Two</string>
+    <string name="enter_third_item">Item Three</string>
+    <string name="submit">Submit</string>
+    <string name="todo">sample</string>
 </resources>

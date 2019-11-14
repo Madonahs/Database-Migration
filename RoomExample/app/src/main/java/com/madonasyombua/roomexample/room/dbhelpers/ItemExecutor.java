@@ -1,4 +1,4 @@
-package com.madonasyombua.roomexample.room.executor;
+package com.madonasyombua.roomexample.room.dbhelpers;
 
 public class ItemExecutor {
 }

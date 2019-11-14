@@ -1,4 +1,4 @@
-package com.madonasyombua.roomexample.room.viewmodel;
+package com.madonasyombua.roomexample.room.dbhelpers;
 
 public class ItemViewModel {
 }

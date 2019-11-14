@@ -1,4 +1,8 @@
 package com.madonasyombua.roomexample.room.ItemDB;
 
-public class ItemDatabase {
+import androidx.room.RoomDatabase;
+
+public abstract class ItemDatabase extends RoomDatabase {
+
+
 }
