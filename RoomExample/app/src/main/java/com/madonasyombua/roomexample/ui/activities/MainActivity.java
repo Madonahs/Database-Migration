@@ -1,8 +1,10 @@
-package com.madonasyombua.roomexample;
+package com.madonasyombua.roomexample.ui.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.madonasyombua.roomexample.R;
 
 public class MainActivity extends AppCompatActivity {
 
