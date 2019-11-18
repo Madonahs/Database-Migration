@@ -20,7 +20,10 @@ This repository holds the Database Migration: from SQLiteOpenHelper to Room pers
 1. Java
 2. Kotlin
 
+ ## Results
+ ![20191110_115521](https://user-images.githubusercontent.com/11560987/69079013-203ae180-0a07-11ea-8dd6-25136a176f79.jpg)
 
+ 
 <div>
   <h2>
 <details>
@@ -33,3 +36,12 @@ This repository holds the Database Migration: from SQLiteOpenHelper to Room pers
    *  [**Kotlin**]( 
 https://kotlinlang.org/)
  *  [**Incrementally migrate from SQLite to Room**](https://medium.com/androiddevelopers/incrementally-migrate-from-sqlite-to-room-66c2f655b377)
+
+</details>
+</h2>
+</div>
+  
+ ### Images
+ 
+ <img src="https://user-images.githubusercontent.com/11560987/46096642-52dfa600-c185-11e8-99d7-3c0729d77eac.png" width="380"/> <img src="https://user-images.githubusercontent.com/11560987/46096643-53783c80-c185-11e8-837e-b119d6366b38.png" width="380"/> 
+ <img src="https://user-images.githubusercontent.com/11560987/46096644-53783c80-c185-11e8-8169-8d4e70cfbd6c.png" width="380"/>
