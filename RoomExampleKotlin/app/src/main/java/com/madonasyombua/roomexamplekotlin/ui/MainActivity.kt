@@ -1,7 +1,8 @@
-package com.madonasyombua.roomexamplekotlin
+package com.madonasyombua.roomexamplekotlin.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.madonasyombua.roomexamplekotlin.R
 
 class MainActivity : AppCompatActivity() {
 
