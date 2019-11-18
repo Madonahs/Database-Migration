@@ -14,6 +14,7 @@ import com.madonasyombua.roomexample.room.db.ItemDatabase;
 import com.madonasyombua.roomexample.room.entity.Item;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -21,8 +22,9 @@ import org.junit.runner.RunWith;
 import java.util.List;
 
 import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.assertThat;
+
 import static junit.framework.TestCase.assertTrue;
+import static org.junit.Assert.assertThat;
 
 
 @RunWith(AndroidJUnit4.class)
@@ -74,13 +76,35 @@ public class CreateItemDaoTest {
     }
 
 
+    // delete all test
+
+    @Test
+    public void deleteAll() throws InterruptedException {
+
+
+        Item item = new Item("t", "test", "tes");
+
+        itemDao.insertItem(item);
+
+        Item item1 = new Item ("test 4", "test 5", "test 5");
+
+        itemDao.insertItem(item1);
+
+        itemDao.deleteItem(item);
+        itemDao.deleteItem(item1);
+
+
+        List<Item> allEntries = LiveDataTestUtil.getValue(itemDao.getAllItems());
+        assert(allEntries.isEmpty());
+
+    }
+
     // when empty
     @Test
     public void whenEmpty() throws InterruptedException {
         List<Item> items = LiveDataTestUtil.getValue(itemDao.getAllItems());
         assertTrue(items.isEmpty());
     }
-
 
 
 
