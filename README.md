@@ -4,7 +4,9 @@
 <p vertical-align="top"><h1>&nbsp;Database Migration</h1>
 </p>
 
-This repository holds the Database Migration: from SQLiteOpenHelper to Room persistent Library. It will have examples in Java and Kotlin
+This repository holds the Database Migration: from SQLiteOpenHelper to Room persistent Library. It will have examples in Java and Kotlin.
+
+## Currently adding files.
 
 
 <h2>Projects&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
