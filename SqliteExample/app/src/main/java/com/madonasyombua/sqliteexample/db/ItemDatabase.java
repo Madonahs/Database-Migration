@@ -1,12 +1,10 @@
 package com.madonasyombua.sqliteexample.db;
 
-import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import com.madonasyombua.sqliteexample.db.contracts.ItemContract;
-import com.madonasyombua.sqliteexample.db.models.Item;
 
 public class ItemDatabase extends SQLiteOpenHelper {
 
@@ -44,26 +42,9 @@ public class ItemDatabase extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
-    }
-
-    // add items to the db
-
-
-    public void addItems(Item item){
-
-        SQLiteDatabase db = this.getWritableDatabase();
-
-        ContentValues contentValues = new ContentValues();
-        contentValues.put(ItemContract.ItemEntry.COLUMN_ITEM_ONE, item.getItemOne()); // get item one
-        contentValues.put(ItemContract.ItemEntry.COLUMN_ITEM_TWO, item.getItemTwo()); // get item two
-        contentValues.put(ItemContract.ItemEntry.COLUMN_ITEM_THREE, item.getItemThree()); // get item three
-
-
-        db.insert(ItemContract.ItemEntry.TABLE_NAME, null, contentValues);
-
-        db.close(); // close connection
 
     }
+
 
 
 }
