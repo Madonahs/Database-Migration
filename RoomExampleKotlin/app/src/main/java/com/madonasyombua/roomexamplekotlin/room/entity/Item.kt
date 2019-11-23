@@ -10,7 +10,7 @@ import androidx.room.PrimaryKey
  * @author madona syombua
  *
  * A basic class representing an entity that is a row in a one-column database table it also
- * holds the accessor and mutotor methods
+ * holds the accessor and mutator methods
  * @ Entity - You must annotate the class as an entity and supply a table name if not class name.
  * @ PrimaryKey - You must identify the primary key.
  * @ ColumnInfo - You must supply the column name if it is different from the variable name.
