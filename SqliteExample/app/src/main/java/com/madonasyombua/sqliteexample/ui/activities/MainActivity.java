@@ -22,6 +22,11 @@ import com.madonasyombua.sqliteexample.ui.adapter.ItemAdapter;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+/**
+ * @author madona
+ *
+ * Main activity class created 11:23:19
+ */
 public class MainActivity extends AppCompatActivity {
 
 
@@ -51,16 +56,17 @@ public class MainActivity extends AppCompatActivity {
 
         sqlRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+        // Item database class
         ItemDatabase dbHelper = new ItemDatabase(this);
 
-        mDb = dbHelper.getWritableDatabase();
+        mDb = dbHelper.getWritableDatabase(); // get the writable database
 
 
-        Cursor cursor = getAllItems();
+        Cursor cursor = getAllItems(); // cursor
 
-        mAdapter = new ItemAdapter(this, cursor);
+        mAdapter = new ItemAdapter(this, cursor); // call the item adapter which has two arguments the context and cursor
 
-        sqlRecyclerView.setAdapter(mAdapter);
+        sqlRecyclerView.setAdapter(mAdapter); // set the recycler view to the adapter
 
 
     }

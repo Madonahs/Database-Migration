@@ -16,6 +16,12 @@ import com.madonasyombua.sqliteexample.db.contracts.ItemContract;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+/**
+ * @author madona
+ *
+ * Item Adapter  class created 11:23:19
+ */
+
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder> {
 
 
@@ -35,6 +41,13 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
 
     }
 
+    /**
+     * Item adapter View Holder
+     * @param parent parent view group
+     * @param viewType view type
+     * @return view
+     */
+
     @NonNull
     @Override
     public ItemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -44,6 +57,11 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
         return new ItemViewHolder(view);
     }
 
+    /**
+     * Binding view holder
+     * @param holder the item view holder
+     * @param position each position
+     */
     @Override
     public void onBindViewHolder(@NonNull ItemViewHolder holder, int position) {
 
