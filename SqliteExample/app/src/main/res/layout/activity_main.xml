@@ -57,6 +57,8 @@
             android:layout_marginLeft="92dp"
             android:layout_marginStart="92dp"
             android:layout_marginTop="16dp"
+
+            android:onClick="addItems"
             android:text="@string/submit"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/item_three" />
