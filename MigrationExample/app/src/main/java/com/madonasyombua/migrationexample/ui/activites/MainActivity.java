@@ -19,7 +19,6 @@ import java.util.concurrent.Executors;
 public class MainActivity extends AppCompatActivity {
 
 
-
     public static final String LOG = MainActivity.class.getSimpleName();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,14 +32,12 @@ public class MainActivity extends AppCompatActivity {
         itemDbSqlite.addItems(new Item(1,"Hello","Database Migration"));
         itemDbSqlite.addItems(new Item(2,"Happy Lunch","Database Migration"));
         itemDbSqlite.addItems(new Item(3,"Happy Saturday","Database Migration"));
+        itemDbSqlite.addItems(new Item(4,"Moving","Database Migration"));
 
         Log.v(LOG,"DB Created using SQLiteOpenHelper and 3 Items  added");
 
         Item extractedItem = itemDbSqlite.getItems(1);
         Log.v(LOG,extractedItem.getItem_one() + " : " + extractedItem.getItem_two());
-
-
-
 
 
 

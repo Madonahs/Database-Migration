@@ -8,9 +8,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import com.madonasyombua.migrationexample.db.contracts.ItemContract;
 import com.madonasyombua.migrationexample.db.model.Item;
-
 import static com.madonasyombua.migrationexample.db.contracts.ItemContract.ItemEntry.TABLE_NAME;
-import static com.madonasyombua.migrationexample.db.contracts.ItemContract.ItemEntry.item1;
+
 
 
 /**
@@ -36,12 +35,14 @@ public class ItemDbSqlite extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
 
-        String CREATE_ITEM_TABLE = "CREATE TABLE " + TABLE_NAME + "("
-                + ItemContract.ItemEntry.item + " INTEGER PRIMARY KEY," + ItemContract.ItemEntry.item1 + " TEXT,"
-                + ItemContract.ItemEntry.item2 + " TEXT" + ")";
+        final String SQLITE_DATABASE_ITEM_TABLE = "CREATE TABLE " + ItemContract.ItemEntry.TABLE_NAME + "( "
+                + ItemContract.ItemEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+                +ItemContract.ItemEntry.COLUMN_ITEM_ONE + " TEXT NOT NULL, "
+                + ItemContract.ItemEntry.COLUMN_ITEM_TWO + " TEXT NOT NULL,"
+                + ItemContract.ItemEntry.COLUMN_ITEM_THREE + " TEXT NOT NULL " + "); ";
 
 
-        sqLiteDatabase.execSQL(CREATE_ITEM_TABLE);
+        sqLiteDatabase.execSQL(SQLITE_DATABASE_ITEM_TABLE);
 
     }
 
@@ -54,9 +55,10 @@ public class ItemDbSqlite extends SQLiteOpenHelper {
 
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
-        values.put(ItemContract.ItemEntry.item, item.getItem());
-        values.put(ItemContract.ItemEntry.item1, item.getItem_one()); 
-        values.put(ItemContract.ItemEntry.item2, item.getItem_two());
+
+        values.put(ItemContract.ItemEntry.COLUMN_ITEM_ONE, item.getItem());
+        values.put(ItemContract.ItemEntry.COLUMN_ITEM_TWO, item.getItem_one());
+        values.put(ItemContract.ItemEntry.COLUMN_ITEM_THREE , item.getItem_two());
         // Inserting Row
         db.insert(TABLE_NAME, null, values);
         db.close(); // Closing database connection
@@ -65,11 +67,14 @@ public class ItemDbSqlite extends SQLiteOpenHelper {
     public Item getItems(int id){
         SQLiteDatabase db = this.getReadableDatabase();
 
-        Cursor cursor = db.query(TABLE_NAME, new String[] {ItemContract.ItemEntry.item,
-                        item1, ItemContract.ItemEntry.item2}, ItemContract.ItemEntry.item + "=?",
+        Cursor cursor = db.query(TABLE_NAME, new String[]
+                        {ItemContract.ItemEntry.COLUMN_ITEM_ONE,
+                        ItemContract.ItemEntry.COLUMN_ITEM_TWO,
+                                ItemContract.ItemEntry.COLUMN_ITEM_THREE}, ItemContract.ItemEntry.COLUMN_ITEM_ONE + "=?",
                 new String[] { String.valueOf(id) }, null, null, null, null);
         if (cursor != null)
             cursor.moveToFirst();
+        assert cursor != null;
         return new Item(Integer.parseInt(cursor.getString(0)),
                  cursor.getString(1), cursor.getString(2));
     }

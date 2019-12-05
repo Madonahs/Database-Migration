@@ -18,7 +18,7 @@ import androidx.room.PrimaryKey;
 @Entity
 public class Item {
 
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     private int  item;
     private String item_one;
     private String item_two;

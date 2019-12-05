@@ -18,7 +18,7 @@ public interface ItemDao {
     @Query("SELECT * FROM item")
     List<Item> getAllItems();
 
-    @Insert
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insertItem(Item item);
 
 

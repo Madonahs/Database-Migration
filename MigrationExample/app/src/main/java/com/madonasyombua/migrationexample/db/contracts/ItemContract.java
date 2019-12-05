@@ -14,11 +14,12 @@ public class ItemContract  {
     public class ItemEntry implements BaseColumns{
 
 
-        public static final String TABLE_NAME = "item_table";
-        public static final String item = "item_id";
-        public static final String item1 = "item1";
-        public static final String item2 = "item2";
+        //Inside create a static final members for the table name and each of the db columns
 
+        public static final String TABLE_NAME = "item_table";
+        public static final String COLUMN_ITEM_ONE = "item_one";
+        public static final String COLUMN_ITEM_TWO = "item_two";
+        public static final String COLUMN_ITEM_THREE = "item_three";
 
     }
 
