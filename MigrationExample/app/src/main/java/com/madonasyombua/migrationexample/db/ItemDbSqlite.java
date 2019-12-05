@@ -70,9 +70,8 @@ public class ItemDbSqlite extends SQLiteOpenHelper {
                 new String[] { String.valueOf(id) }, null, null, null, null);
         if (cursor != null)
             cursor.moveToFirst();
-       Item item = new Item(Integer.parseInt(cursor.getString(0)),
-                cursor.getString(1), cursor.getString(2));
-        return item;
+        return new Item(Integer.parseInt(cursor.getString(0)),
+                 cursor.getString(1), cursor.getString(2));
     }
 
 }

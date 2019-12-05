@@ -19,7 +19,6 @@ import java.util.concurrent.Executors;
 public class MainActivity extends AppCompatActivity {
 
 
-    ItemRoomDatabase roomDatabase;
 
     public static final String LOG = MainActivity.class.getSimpleName();
     @Override
