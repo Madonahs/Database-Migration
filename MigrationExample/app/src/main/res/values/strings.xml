@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">MigrationExample</string>
+    <string name="db_migration">You will need a DB Browser for this project since we
+        are testing if the Migration was successful!.
+        Please use other projects for display of items. Package name is com.madonasyombua.migrationexample</string>
 </resources>
