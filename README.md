@@ -20,6 +20,9 @@ This repository holds the Database Migration: from SQLiteOpenHelper to Room pers
 1. Java
 2. Kotlin
 
+**Migration Logs**
+
+![Log messgae](https://user-images.githubusercontent.com/11560987/70252083-baf92700-174e-11ea-9fb6-2255dd2a165b.png)
 
  
 <div>
