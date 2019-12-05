@@ -55,7 +55,7 @@ public class ItemDbSqlite extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(ItemContract.ItemEntry.item, item.getItem());
-        values.put(ItemContract.ItemEntry.item1, item.getItem_one()); // Contact Phone
+        values.put(ItemContract.ItemEntry.item1, item.getItem_one()); 
         values.put(ItemContract.ItemEntry.item2, item.getItem_two());
         // Inserting Row
         db.insert(TABLE_NAME, null, values);
