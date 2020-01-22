@@ -1,5 +1,10 @@
 <br>
 
+ <p align="left">
+       <img src="http://img.shields.io/:license-apache-blue.svg" alt="License" />
+        <img src="https://img.shields.io/badge/status-incomplete-orange.svg" />
+        <img src="https://img.shields.io/badge/code%20quality-10-green.svg" />
+</p>
 <img align="left" width="180" src="https://user-images.githubusercontent.com/11560987/68677844-c92a9d80-052a-11ea-8a9f-2baaa9ac7be4.jpg">
 <p vertical-align="top"><h1>&nbsp;Database Migration</h1>
 </p>
