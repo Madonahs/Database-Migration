@@ -22,8 +22,7 @@ This repository holds the Database Migration: from SQLiteOpenHelper to Room pers
 6. Database Migration Kotlin Example
 
 ### Language
-1. Java
-2. Kotlin
+1. Kotlin
 
 **Migration Logs**
 
